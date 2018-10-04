@@ -15,12 +15,21 @@ module.exports = {
       __dirname + '/assets/stylesheets',
       __dirname + '/node_modules',
     ],
-    extensions: ['.js', '.css', '.scss']
+    extensions: ['.js', '.css', '.scss', '.sass']
   },
   module: {
     rules: [
       {
         test: /\.scss$/,
+        use: [
+          { loader: 'style-loader', options: { sourceMap: true } },
+          { loader: 'css-loader', options: { sourceMap: true } },
+          { loader: 'postcss-loader', options: { sourceMap: true } },
+          { loader: 'sass-loader', options: { sourceMap: true } }
+        ]
+      },
+      {
+        test: /\.sass$/,
         use: [
           { loader: 'style-loader', options: { sourceMap: true } },
           { loader: 'css-loader', options: { sourceMap: true } },

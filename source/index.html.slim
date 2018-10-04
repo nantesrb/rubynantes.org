@@ -1,13 +1,43 @@
 ---
-title: Homepage
-description: 'Write less code, solve more problems'
+title: ''
+description: ''
 twitter_card_img: ''
 ---
 
-h1 = data.settings.site.title
-em = data.settings.site.description
-markdown:
-  Advanced Middleman template with `Sass`, `Slim` & `Yarn`
+section.hero.is-primary.is-medium
+  .hero-body
+    .container
+      .columns
+        .column.is-one-third
+        .column.is-two-third
+          h2.title Rassemblons les rubyistes de la région nantaise autour de Ruby et de son écosystème.
 
-  🚀
-= link_to 'Read the documentation', data.settings.site.url
+br
+.container.has-team-spirit-background
+  .columns
+    .column
+      .logo
+        = image_tag "elephant.png"
+        h1.title Nantes.rb
+    .column
+      .card
+        .card-content
+          .flexbox.flexbox-align-bottom
+            .image.is-64x64
+              = image_tag "people.png"
+            .flexitem.flexitem-main
+              h3.title.is-3 Assistez à nos meetups
+        .card-content
+          p Nous nous retrouvons chaque mois pour des talks, des rencontres ou des apéros.
+          = link_to 'Retrouvez notre prochain Meetup', 'https://www.meetup.com/Nantes-rb/'
+
+      .card
+        .card-content
+          .flexbox.flexbox-align-bottom
+            .image.is-64x64
+              = image_tag "slack.png"
+            .flexitem.flexitem-main
+              h3.title.is-3 Discutons sur Slack
+        .card-content
+          p Vous dépanner et vous aider à progresser en Ruby ? Participer aux projets de la communauté ?
+          = link_to 'Rejoignez-nous sur Slack', 'https://nantesrb.herokuapp.com/'
