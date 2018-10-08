@@ -22,3 +22,6 @@ gem 'oga',                     '~> 2.8'
 
 # Testing Deploy
 gem 'rake'
+
+# Fix known vulnerability CVE-2018-1000201
+gem 'ffi', '~> 1.9.24'
