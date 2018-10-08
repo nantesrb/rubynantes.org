@@ -44,4 +44,7 @@
     flex: 1 0 auto;
     padding: 0 7px;
   }
+  &-shrink{
+    flex-shrink: 1;
+  }
 }

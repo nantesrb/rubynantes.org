@@ -4,7 +4,7 @@ description: ''
 twitter_card_img: ''
 ---
 
-section.hero.is-primary.is-medium
+section.hero.is-primary.is-medium.is-hidden-mobile
   .hero-body
     .container
       .columns
@@ -12,20 +12,28 @@ section.hero.is-primary.is-medium
         .column.is-two-third
           h2.title Rassemblons les rubyistes de la région nantaise autour de Ruby et de son écosystème.
 
+.is-hidden-tablet
+  section.hero.is-primary
+    .hero-body
+      .container.has-text-centered
+        .logo-mobile
+          = image_tag "elephant.png"
+          h1.title Nantes.rb
+
 br
 .container.has-team-spirit-background
-  .columns
-    .column
+  .columns.is-desktop
+    .column.is-hidden-mobile
       .logo
         = image_tag "elephant.png"
         h1.title Nantes.rb
     .column
       .card
         .card-content
-          .flexbox.flexbox-align-bottom
+          .flexbox.flexbox-align-bottom.flexbox-wrap
             .image.is-64x64
               = image_tag "people.png"
-            .flexitem.flexitem-main
+            .flexitem.flexitem-main.flexitem-shrink
               h3.title.is-3 Assistez à nos meetups
         .card-content
           p Nous nous retrouvons chaque mois pour des talks, des rencontres ou des apéros.
@@ -33,10 +41,10 @@ br
 
       .card
         .card-content
-          .flexbox.flexbox-align-bottom
+          .flexbox.flexbox-align-bottom.flexbox-wrap
             .image.is-64x64
               = image_tag "slack.png"
-            .flexitem.flexitem-main
+            .flexitem.flexitem-main.flexitem-shrink
               h3.title.is-3 Discutons sur Slack
         .card-content
           p Vous dépanner et vous aider à progresser en Ruby ? Participer aux projets de la communauté ?

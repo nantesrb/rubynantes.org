@@ -1,0 +1,16 @@
+footer.footer
+  .container
+    .content.has-text-centered
+      p.strong
+        | Nantes.rb &#8226;
+        i.far.fa-copyright<>
+        = Date.today.year
+
+    .flexbox.flexbox-center
+      .social-link = link_to 'Meetup', 'https://www.meetup.com/fr-FR/Nantes-rb/', target: '_blank'
+      | &nbsp;&#8226;&nbsp;
+      .social-link = link_to 'Slack', 'https://nantesrb.herokuapp.com/', target: '_blank'
+      | &nbsp;&#8226;&nbsp;
+      .social-link = link_to 'GitHub', 'https://github.com/nantesrb', target: '_blank'
+      | &nbsp;&#8226;&nbsp;
+      .social-link = link_to 'Twitter', 'https://twitter.com/nantesrb', target: '_blank'
