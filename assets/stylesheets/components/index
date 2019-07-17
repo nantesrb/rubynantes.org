@@ -1,0 +1,52 @@
+.flexbox {
+  display: flex; }
+  .flexbox-center {
+    align-items: center;
+    justify-content: center; }
+  .flexbox-around {
+    align-items: center;
+    justify-content: space-around; }
+  .flexbox-between {
+    align-items: center;
+    justify-content: space-between; }
+  .flexbox-end {
+    align-items: center;
+    justify-content: flex-end; }
+  .flexbox-align-top {
+    align-items: flex-start; }
+  .flexbox-align-bottom {
+    align-items: flex-end; }
+  .flexbox-wrap {
+    flex-wrap: wrap; }
+  .flexbox-wrap-reverse {
+    flex-wrap: wrap-reverse; }
+
+.flexitem-size-40 {
+  max-width: 40%; }
+.flexitem-fixed-size-40 {
+  width: 40%; }
+.flexitem-main {
+  flex: 1 0 auto;
+  padding: 0 7px; }
+.flexitem-shrink {
+  flex-shrink: 1; }
+
+.card {
+  margin: 24px; }
+
+.logo {
+  position: relative;
+  top: -120px;
+  background-color: #ffffff;
+  width: 176px;
+  height: 176px;
+  border-radius: 50%;
+  text-align: center; }
+  .logo-mobile {
+    background-color: #ffffff;
+    width: 176px;
+    height: 176px;
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 24px; }

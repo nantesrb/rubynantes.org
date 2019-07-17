@@ -1,0 +1,6 @@
+.has-team-spirit-background {
+  background-image: url("/assets/images/team_spirit-124b4d31.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  min-height: 70vh; }
